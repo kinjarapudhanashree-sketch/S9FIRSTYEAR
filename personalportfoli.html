@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: plum;
+            color: red;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .about {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color:plum;
+            color: skyblue;
+            margin-top: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Photography Portfolio</h1>
+    <p>Capturing the real moments of my life</p>
+</header>
+
+<section>
+    <div class="about">
+        <h2>About Me</h2>
+    </div>
+
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="https://thumbs.dreamstime.com/b/girl-nature-anime-visual-novel-game-generate-ai-person-artwork-310804721.jpg" alt="Nature photo">
+        <img src="https://thumbs.dreamstime.com/b/anime-girl-standing-legeant-summer-field-surrounded-beautiful-wildflowers-trees-back-look-art-360577301.jpg" alt="traditional photo">
+        <img src="https://png.pngtree.com/png-vector/20230815/ourmid/pngtree-cartoon-couple-sticker-cute-cartoon-couple-anime-sticker-vector-png-image_6908915.png" alt=" with brothers">
+        <img src="https://img.freepik.com/free-photo/people-celebrating-new-year-s-eve_23-2151070397.jpg?semt=ais_hybrid&w=740&q=80" alt="with family">
+        <img src="https://img.freepik.com/free-photo/anime-character-traveling_23-2151278739.jpg?semt=ais_hybrid&w=740&q=80" alt="travelling photo">
+        <img src="https://img.freepik.com/premium-photo/using-smartphones-cafe_863013-100058.jpg?semt=ais_hybrid&w=740&q=80" alt="food image">
+    </div>
+</section>
+
+<footer>
+    <p>©  my 2025 Photographer</p>
+</footer>
+
+</body>
+</html>
